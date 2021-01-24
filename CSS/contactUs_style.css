@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --clr-primary-300: #F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-primary-100: #FFF;
+    --clr-primary-900: #222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'playfair display', serif;
+}
+
+
+*,
+*::before,*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /*background-color: #24252A;*/
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--clr-primary-300);
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3, p{
+    margin: 0;
+    /*margin-bottom: 1em;*/
+    padding-bottom: 1em;
+}
+
+/*  header  */
+
+.li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+.logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    color:  #FFF;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    order: 2;
+}
+
+.nav_links {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    order: 1;
+}
+button {
+    margin-left: 20px;
+    padding: 7px 25px;
+    background-color: rgb(0,136,139,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(0,136,139,0.8);
+}
+
+
+/*  Form  */
+
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: url(../images/Programming_boot.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    color: #FFF;
+    max-width: 500px;
+    line-height: 65px;
+    padding: 50PX;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form {
+    padding: 50px;
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info .contact-form {
+    flex: 1;
+}
+
+.contact-form h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box {
+    background: #000;
+    color: #FFF;
+    border: none;
+    width: calc (50% - 10px);
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+    margin-right: 15px;
+}
+
+.contact-form textarea {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn {
+    float: right;
+    background: royalblue;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.contact-form .send-btn:hover {
+    background: royalblue;
+}
+
+@media screen and (max-width :950px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+.contact-info, .contact-form {
+    margin: 30px 50px;
+    }
+
+.contact-form h2 {
+    font-size: 30px;
+}
+
+.contact-form .text-box {
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

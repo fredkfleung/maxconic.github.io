@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --clr-primary-300: #F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-primary-100: #FFF;
+    --clr-primary-900: #222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'playfair display', serif;
+}
+
+
+*,
+*::before,*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /*background-color: #24252A;*/
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--clr-primary-300);
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3, p{
+    margin: 0;
+    /*margin-bottom: 1em;*/
+    padding-bottom: 1em;
+}
+
+/*  header  */
+
+.li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+.logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    color:  #FFF;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    order: 2;
+}
+
+.nav_links {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    order: 1;
+}
+button {
+    margin-left: 20px;
+    padding: 7px 25px;
+    background-color: rgb(0,136,139,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(0,136,139,0.8);
+}
+
+/*  Section */
+
+
+section{
+    padding: 3rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width:  35rem;
+}
+
+.container--narrow p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: crimson;
+}
+
+.split {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.bg-light { background-color: var(--clr-primary-300);}
+.bg-primary { background-color: var(--clr-primary-400);}
+.bg-dark { background-color: var(--clr-neutral-900);}
+
+section,
+.bg-dark h2, 
+.bg-primary h2 {
+    color: #FFF;
+    
+}
+
+section,
+.bg-dark p, 
+.bg-primary p {
+    color: #FFF;
+}
+
+
+section,
+.bg-light h2, p {
+    color: var(--clr-primary-900);
+}
+
+
+main {
+    padding: 3em;
+    margin: 0;
+    max-width: 100%;
+    /*background-color: lightpink;*/
+    background-image: url(../images/main-visual3.jpg);
+    /*background-image: url(../images/Christmas/paris-in-december.jpg);*/
+    background-position: center;
+}
+
+main, p {
+    color: var(--clr-primary-900);
+
+}
+
+main, h1 {
+    color: var(--clr-primary-900);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: px;
+}
+
+@media (min-width: 40em) {
+    main {
+        padding: 7em 0;
+    }
+}
+
+img {
+    display: initial;
+    max-width: 100%;
+}
+
+
+
+
+
